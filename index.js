@@ -14,10 +14,12 @@ searchTest(driver_fx);
 searchTest(driver_chr);
 
 function searchTest(driver) {
-  driver.get('https://www.thepromoapp.com/#!/');
+  driver.get('https://www.thepromoapp.com/#!/login');
  
- /* driver.findElement(By.name('q')).sendKeys('webdriver');
-
+ driver.findElement(By.name('userName')).sendKeys('quartblabla1@gmail.com');
+ driver.findElement(By.name('password')).sendKeys('Zxz123Zxz@');
+ driver.findElement(By.name('password')).sendKeys(webdriver.Key.ENTER);
+ /*
   driver.sleep(3000).then(function() {
     driver.findElement(By.name('q')).sendKeys(webdriver.Key.ENTER);
   });
