@@ -14,8 +14,9 @@ searchTest(driver_fx);
 searchTest(driver_chr);
 
 function searchTest(driver) {
-  driver.get('http://www.google.com');
-  driver.findElement(By.name('q')).sendKeys('webdriver');
+  driver.get('https://www.thepromoapp.com/#!/');
+ 
+ /* driver.findElement(By.name('q')).sendKeys('webdriver');
 
   driver.sleep(3000).then(function() {
     driver.findElement(By.name('q')).sendKeys(webdriver.Key.ENTER);
@@ -23,7 +24,7 @@ function searchTest(driver) {
 
   driver.findElement(By.name('btnK')).click();
 
-  driver.sleep(20000).then(function() {
+  driver.sleep(2000).then(function() {
     driver.getTitle().then(function(title) {
       if(title === 'webdriver - Google Search') {
         console.log('Test passed');
@@ -32,4 +33,4 @@ function searchTest(driver) {
       }
       driver.quit();
     });
-  })}
+  })*/}
